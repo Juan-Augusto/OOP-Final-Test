@@ -1,4 +1,6 @@
-public class Motorista extends Usuario{
+public class Motorista implements Usuario{
+    private String nome;
+    private String CPF;
     private float salario;
     private float avaliacoesPassageiros;
 
@@ -7,6 +9,19 @@ public class Motorista extends Usuario{
     }
     public void manterVeiculoDentroDosPadroesDeSegurança(){
         System.out.println("mantive");
+    }
+
+    public Motorista() {
+        this.salario = salario;
+        this.avaliacoesPassageiros = avaliacoesPassageiros;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
     }
 
     public float getSalario() {
@@ -28,8 +43,20 @@ public class Motorista extends Usuario{
     @Override
     public String toString() {
         return "Motorista{" +
-                "salario=" + salario +
+                "nome='" + nome + '\'' +
+                ", CPF='" + CPF + '\'' +
+                ", salario=" + salario +
                 ", avaliacoesPassageiros=" + avaliacoesPassageiros +
                 '}';
+    }
+
+    @Override
+    public String getNome() {
+        return nome;
+    }
+
+    @Override
+    public String getCPF() {
+        return CPF;
     }
 }

@@ -1,0 +1,9 @@
+HHH3216
+Preto
+true
+true
+
+AAA7891
+Vermelho
+true
+true

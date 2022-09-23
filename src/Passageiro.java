@@ -1,6 +1,17 @@
-public class Passageiro extends Usuario{
+
+public class Passageiro implements Usuario {
+    private String nome;
+    private String CPF;
     private String destino;
     private double avaliacoesMotoristas;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
 
     public void informarDestino(){
         System.out.println("Cinema");
@@ -9,7 +20,7 @@ public class Passageiro extends Usuario{
         System.out.println("Pago");
     }
 
-    public Passageiro(String destino, double avaliacoesMotoristas) {
+    public Passageiro() {
         this.destino = destino;
         this.avaliacoesMotoristas = avaliacoesMotoristas;
     }
@@ -30,11 +41,20 @@ public class Passageiro extends Usuario{
         this.avaliacoesMotoristas = avaliacoesMotoristas;
     }
 
+
+
     @Override
     public String toString() {
-        return "Passageiro{" +
-                "destino='" + destino + '\'' +
-                ", avaliacoesMotoristas=" + avaliacoesMotoristas +
-                '}';
+        return "Passageiro{" + "nome=" + nome + " CPF=" + CPF +  " destino='" + destino + '\'' + ", avaliacoesMotoristas=" + avaliacoesMotoristas + '}';
+    }
+
+    @Override
+    public String getNome() {
+        return nome;
+    }
+
+    @Override
+    public String getCPF() {
+        return CPF;
     }
 }
