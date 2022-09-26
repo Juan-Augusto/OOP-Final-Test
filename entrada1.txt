@@ -4,5 +4,5 @@ Joao,000.000.00003,Shopping,9.4,passageiro
 Thiago,000.000.00004,Praia,9.0,passageiro
 A,000.000.00001,8500,9.5,motorista
 B,000.000.00002,500.50,9.6,motorista
-C,000.000.00003,2200,9.4,motorista
+C,000.000.00003,2200,8,motorista
 D,000.000.00004,9000,9.0,motorista

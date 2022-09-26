@@ -1,9 +1,6 @@
-HHH3216
-Preto
-true
-true
-
-AAA7891
-Vermelho
-true
-true
+HHH3216,Preto,true,true,carro
+AAA7891,Preto,true,true,moto
+TYA4889,Preto,true,true,moto
+YJAO1082,Amarelo,true,true,carro
+CCC4130,Azul,true,true,moto
+BBB7394,Cinza,true,true,carro

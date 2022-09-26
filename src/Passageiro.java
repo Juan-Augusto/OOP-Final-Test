@@ -37,6 +37,16 @@ public class Passageiro implements Usuario {
         return avaliacoesMotoristas;
     }
 
+    @Override
+    public float getSalario() {
+        return -1;
+    }
+
+    @Override
+    public float getAvaliacoesPassageiros() {
+        return -1;
+    }
+
     public void setAvaliacoesMotoristas(double avaliacoesMotoristas) {
         this.avaliacoesMotoristas = avaliacoesMotoristas;
     }

@@ -59,4 +59,14 @@ public class Motorista implements Usuario{
     public String getCPF() {
         return CPF;
     }
+
+    @Override
+    public String getDestino() {
+        return null;
+    }
+
+    @Override
+    public double getAvaliacoesMotoristas() {
+        return -1;
+    }
 }

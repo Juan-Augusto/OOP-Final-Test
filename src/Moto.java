@@ -1,8 +1,18 @@
 public class Moto implements Veiculo {
+    private String placa;
+    private String cor;
     private boolean duasRodas;
     private boolean capaceteExtra;
 
-    public Moto(boolean duasRodas, boolean capaceteExtra) {
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public Moto() {
         this.duasRodas = duasRodas;
         this.capaceteExtra = capaceteExtra;
     }
@@ -24,12 +34,42 @@ public class Moto implements Veiculo {
     }
 
     @Override
+    public String toString() {
+        return "Moto{" +
+                "placa='" + placa + '\'' +
+                ", cor='" + cor + '\'' +
+                ", duasRodas=" + duasRodas +
+                ", capaceteExtra=" + capaceteExtra +
+                '}';
+    }
+
+    @Override
     public String getPlaca() {
-        return null;
+        return placa;
     }
 
     @Override
     public String getCor() {
-        return null;
+        return cor;
+    }
+
+    @Override
+    public boolean getQuatroRodas() {
+        return false;
+    }
+
+    @Override
+    public boolean getDuasRodas() {
+        return duasRodas;
+    }
+
+    @Override
+    public boolean getPresencaEstepe() {
+        return false;
+    }
+
+    @Override
+    public boolean getCapaceteExtra() {
+        return capaceteExtra;
     }
 }
